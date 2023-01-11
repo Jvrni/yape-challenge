@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="details_screen_creation_date">Creation:</string>
+    <string name="details_screen_last_update">Update:</string>
+</resources>
