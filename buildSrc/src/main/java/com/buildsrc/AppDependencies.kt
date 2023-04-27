@@ -14,18 +14,17 @@ object AppDependencies {
     private const val composeUi = "androidx.compose.ui:ui-tooling-preview:${Versions.compose}"
     private const val viewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
     private const val livedata = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycle}"
-    private const val lottie = "com.airbnb.android:lottie-compose:${Versions.lottie}"
     private const val lifeCycle = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"
     private const val ComposeConstraint = "androidx.constraintlayout:constraintlayout-compose:${Versions.composeConstraint}"
-    private const val systemUi = "com.google.accompanist:accompanist-systemuicontroller:${Versions.systemUi}"
     private const val composeRuntimeLivedata = "androidx.compose.runtime:runtime-livedata:${Versions.compose}"
     private const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
     private const val navigationUi = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
     private const val gson = "com.google.code.gson:gson:${Versions.gson}"
-    private const val paging = "androidx.paging:paging-compose:${Versions.paging}"
-    private const val pagingRuntime = "androidx.paging:paging-runtime:${Versions.pagingRuntime}"
     private const val glide = "com.github.skydoves:landscapist-glide:${Versions.glide}"
-    private const val swipeRefresh = "com.google.accompanist:accompanist-swiperefresh:${Versions.swipeRefresh}"
+    const val lottie = "com.airbnb.android:lottie-compose:${Versions.lottie}"
+    const val swipeRefresh = "com.google.accompanist:accompanist-swiperefresh:${Versions.swipeRefresh}"
+    const val mapsCompose = "com.google.maps.android:maps-compose:${Versions.mapsCompose}"
+    const val playServicesMap = "com.google.android.gms:play-services-maps:${Versions.playServiceMaps}"
 
     //coroutines
     private const val coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
@@ -64,7 +63,6 @@ object AppDependencies {
         add(composeUiTooling)
         add(lifeCycle)
         add(ComposeConstraint)
-        add(systemUi)
         add(composeRuntimeLivedata)
         add(navigationFragment)
         add(navigationUi)
@@ -74,10 +72,7 @@ object AppDependencies {
         add(coroutines)
         add(viewModel)
         add(livedata)
-        add(paging)
-        add(pagingRuntime)
         add(glide)
-        add(swipeRefresh)
     }
 
     val serviceLibraries = mutableListOf<String>().apply {
@@ -86,10 +81,6 @@ object AppDependencies {
         add(coroutines)
         add(gson)
         add(gsonConverter)
-        add(paging)
-    }
-
-    val kaptLibraries = mutableListOf<String>().apply {
     }
 
     val androidTestLibraries = mutableListOf<String>().apply {
@@ -106,13 +97,6 @@ object AppDependencies {
         add(mockk)
         add(coroutinesTest)
         add(coreTest)
-    }
-}
-
-//util functions for adding the different type dependencies from build.gradle.kts file
-fun DependencyHandler.kapt(list: List<String>) {
-    list.forEach { dependency ->
-        add("kapt", dependency)
     }
 }
 

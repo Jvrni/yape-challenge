@@ -1,6 +1,6 @@
 package com.ui.details
 
-import BankuishTestTheme
+import YapeTheme
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import androidx.compose.ui.platform.ComposeView
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.core_ui.base.BaseFragment
+import com.core.base.BaseFragment
+import com.core.extensions.safeNavigate
+import com.ui.map.MapFragmentArgs
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class DetailsFragment : BaseFragment<DetailsViewModel>() {
@@ -23,9 +25,12 @@ class DetailsFragment : BaseFragment<DetailsViewModel>() {
     ): View = ComposeView(requireContext()).apply {
 
         setContent {
-            BankuishTestTheme {
-                DetailsScreen(args.data) {
-                    findNavController().popBackStack()
+            YapeTheme {
+                DetailsScreen(args.data, onBack = { findNavController().popBackStack() }) {
+                    findNavController().safeNavigate(
+                        com.ui.map.R.id.map_graph,
+                        MapFragmentArgs(args.data.location).toBundle()
+                    )
                 }
             }
         }

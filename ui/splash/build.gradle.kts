@@ -49,13 +49,13 @@ android {
 }
 
 dependencies {
-    implementation(project(Modules.core))
     implementation(project(Modules.coreUi))
     implementation(project(Modules.service))
-    implementation(project(Modules.uiSearch))
+    implementation(project(Modules.uiHome))
 
     //app libs
     implementation(AppDependencies.appLibraries)
+    implementation(AppDependencies.lottie)
 
     //test libs
     testImplementation(AppDependencies.testLibraries)

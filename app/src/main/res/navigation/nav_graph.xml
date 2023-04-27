@@ -6,7 +6,8 @@
     app:startDestination="@id/splash_graph">
 
     <include app:graph="@navigation/splash_graph" />
-    <include app:graph="@navigation/search_graph" />
+    <include app:graph="@navigation/home_graph" />
     <include app:graph="@navigation/details_graph" />
+    <include app:graph="@navigation/map_graph" />
 
 </navigation>

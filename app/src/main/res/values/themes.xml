@@ -1,6 +1,6 @@
 <resources>
 
-    <style name="Theme.BankuishTest" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.YapeChallenge" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:statusBarColor">@color/white</item>
         <item name="android:navigationBarColor">@color/white</item>
         <item name="android:windowLightStatusBar">true</item>

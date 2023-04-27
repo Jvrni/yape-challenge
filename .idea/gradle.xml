@@ -13,11 +13,11 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/core" />
-            <option value="$PROJECT_DIR$/core-ui" />
             <option value="$PROJECT_DIR$/service" />
             <option value="$PROJECT_DIR$/ui" />
             <option value="$PROJECT_DIR$/ui/details" />
-            <option value="$PROJECT_DIR$/ui/search" />
+            <option value="$PROJECT_DIR$/ui/home" />
+            <option value="$PROJECT_DIR$/ui/map" />
             <option value="$PROJECT_DIR$/ui/splash" />
           </set>
         </option>

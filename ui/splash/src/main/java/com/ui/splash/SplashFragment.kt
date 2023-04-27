@@ -1,6 +1,6 @@
 package com.ui.splash
 
-import BankuishTestTheme
+import YapeTheme
 import Colors
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -18,8 +18,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ComposeView
 import androidx.navigation.fragment.findNavController
 import com.airbnb.lottie.compose.*
-import com.core_ui.base.BaseFragment
-import com.core_ui.extensions.safeNavigate
+import com.core.base.BaseFragment
+import com.core.extensions.safeNavigate
 import kotlinx.coroutines.delay
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -34,15 +34,13 @@ class SplashFragment : BaseFragment<SplashViewModel>() {
     ): View = ComposeView(requireContext()).apply {
 
         setContent {
-            BankuishTestTheme {
+            YapeTheme {
                 Box(
                     modifier = Modifier
                         .fillMaxSize()
                         .background(Colors.background)
                 ) {
-                    val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(
-                        if (Colors.isDark) R.raw.splash_animation_dark else R.raw.splash_animation_light)
-                    )
+                    val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(R.raw.splash_animation))
 
                     LottieAnimation(
                         modifier = Modifier
@@ -59,7 +57,7 @@ class SplashFragment : BaseFragment<SplashViewModel>() {
             LaunchedEffect(true) {
                 delay(2000L)
                 findNavController().popBackStack()
-                findNavController().safeNavigate(com.ui.search.R.id.search_graph)
+                findNavController().safeNavigate(com.ui.home.R.id.home_graph)
             }
         }
     }

@@ -13,15 +13,14 @@ object Versions {
     const val lifecycle = "2.5.1"
     const val lottie = "5.0.3"
     const val koin = "3.2.0"
-    const val systemUi = "0.23.1"
     const val navigation = "2.4.2"
     const val retrofit = "2.9.0"
     const val coroutines = "1.6.4"
     const val gson = "2.9.1"
-    const val paging = "1.0.0-alpha15"
-    const val pagingRuntime = "3.1.1"
     const val glide = "2.0.0"
     const val swipeRefresh = "0.23.0"
+    const val mapsCompose = "2.11.0"
+    const val playServiceMaps = "18.1.0"
 
 
     //test

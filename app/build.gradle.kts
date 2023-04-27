@@ -55,8 +55,9 @@ android {
 dependencies {
     implementation(project(Modules.service))
     implementation(project(Modules.uiSplash))
-    implementation(project(Modules.uiSearch))
+    implementation(project(Modules.uiHome))
     implementation(project(Modules.uiDetails))
+    implementation(project(Modules.uiMap))
 
     //app libs
     implementation(AppDependencies.appLibraries)

@@ -11,7 +11,7 @@
 
         <argument
             android:name="data"
-            app:argType="com.service.search.repository.Repository" />
+            app:argType="com.service.search.repository.Recipe" />
     </fragment>
 
 </navigation>

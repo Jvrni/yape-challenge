@@ -1,8 +1,8 @@
 <resources>
 
-    <style name="Theme.BankuishTest" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="android:statusBarColor">@color/black_202020</item>
-        <item name="android:navigationBarColor">@color/black_202020</item>
+    <style name="Theme.YapeChallenge" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/black_282828</item>
+        <item name="android:navigationBarColor">@color/black_282828</item>
         <item name="android:windowLightStatusBar">false</item>
     </style>
 </resources>

@@ -50,9 +50,9 @@ android {
 }
 
 dependencies {
-    implementation(project(Modules.core))
-    implementation(project(Modules.coreUi))
+     implementation(project(Modules.coreUi))
     implementation(project(Modules.service))
+    implementation(project(Modules.uiMap))
 
     //app libs
     implementation(AppDependencies.appLibraries)

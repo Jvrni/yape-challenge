@@ -7,7 +7,7 @@ object AppConfig {
 
     const val androidTestInstrumentation = "androidx.test.runner.AndroidJUnitRunner"
     const val proguardRules =  "proguard-rules.pro"
-    const val applicationId = "com.bankuishtest"
+    const val applicationId = "com.yapechallenge"
 
-    const val WEB_API_URL = "\"https://api.github.com/\""
+    const val WEB_API_URL = "\"https://demo4717672.mockable.io/\""
 }

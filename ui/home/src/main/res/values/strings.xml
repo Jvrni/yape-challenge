@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_screen_title">Hi,</string>
+    <string name="home_screen_subtitle">Ready to cook ?</string>
+    <string name="home_screen_label_input">Search Recipes...</string>
+    <string name="home_screen_title_filter">Popular Recipes</string>
+    <string name="home_screen_empty_description">Empty list, search for some recipe</string>
+</resources>

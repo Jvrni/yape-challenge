@@ -1,9 +1,9 @@
-rootProject.name = "BankuishTest"
+rootProject.name = "yape-challenge"
 include ':app'
 include ':service'
 include ':ui'
-include ':ui:search'
+include ':ui:home'
 include ':ui:details'
-include ':core-ui'
 include ':core'
 include ':ui:splash'
+include ':ui:map'

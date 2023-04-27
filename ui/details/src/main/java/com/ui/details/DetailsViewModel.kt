@@ -1,8 +1,8 @@
 package com.ui.details
 
-import com.core_ui.base.Action
-import com.core_ui.base.BaseViewModel
-import com.core_ui.base.ViewState
+import com.core.base.Action
+import com.core.base.BaseViewModel
+import com.core.base.ViewState
 
 class DetailsViewModel: BaseViewModel<ViewState, Action>() {
 }

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="search_screen_title">Popular Languages</string>
-    <string name="search_screen_label_input">Search languages</string>
-    <string name="search_screen_empty_description">Empty list, search for some language</string>
-</resources>
