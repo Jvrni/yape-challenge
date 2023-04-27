@@ -24,3 +24,4 @@ https://user-images.githubusercontent.com/20356438/234994278-e7166e14-3b6a-4bbf-
 - Retrofit2 & OkHttp3: Construct the REST APIs and paging network data.
 - Gson: A modern JSON library for Kotlin and Java.
 - Glide: Loading images from network.
+- Maps
